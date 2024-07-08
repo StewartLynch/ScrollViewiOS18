@@ -12,7 +12,6 @@
 		BB5ADD2B2C3C69860095A105 /* ScrollVisibilityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD2A2C3C69860095A105 /* ScrollVisibilityTab.swift */; };
 		BB5ADD2D2C3C83BC0095A105 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD2C2C3C83BC0095A105 /* CarouselView.swift */; };
 		BB5ADD2F2C3C95880095A105 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5ADD2E2C3C95880095A105 /* Launch Screen.storyboard */; };
-		BB5ADD312C3C975B0095A105 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5ADD302C3C975B0095A105 /* README.md */; };
 		BBC9A2312C3B366A002F712A /* ScrollViewiOS18App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A2302C3B366A002F712A /* ScrollViewiOS18App.swift */; };
 		BBC9A2332C3B366A002F712A /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A2322C3B366A002F712A /* StartTabView.swift */; };
 		BBC9A2352C3B366B002F712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC9A2342C3B366B002F712A /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		BB5ADD2A2C3C69860095A105 /* ScrollVisibilityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVisibilityTab.swift; sourceTree = "<group>"; };
 		BB5ADD2C2C3C83BC0095A105 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		BB5ADD2E2C3C95880095A105 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		BB5ADD302C3C975B0095A105 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBC9A22D2C3B366A002F712A /* ScrollViewiOS18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewiOS18.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC9A2302C3B366A002F712A /* ScrollViewiOS18App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewiOS18App.swift; sourceTree = "<group>"; };
 		BBC9A2322C3B366A002F712A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
@@ -51,7 +49,6 @@
 		BBC9A2242C3B366A002F712A = {
 			isa = PBXGroup;
 			children = (
-				BB5ADD302C3C975B0095A105 /* README.md */,
 				BBC9A22F2C3B366A002F712A /* ScrollViewiOS18 */,
 				BBC9A22E2C3B366A002F712A /* Products */,
 			);
@@ -151,7 +148,6 @@
 			files = (
 				BB5ADD2F2C3C95880095A105 /* Launch Screen.storyboard in Resources */,
 				BBC9A2382C3B366B002F712A /* Preview Assets.xcassets in Resources */,
-				BB5ADD312C3C975B0095A105 /* README.md in Resources */,
 				BBC9A2352C3B366B002F712A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
