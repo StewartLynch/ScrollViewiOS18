@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5ADD272C3C3DF10095A105 /* ScrollGeometryChangeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD262C3C3DF10095A105 /* ScrollGeometryChangeTab.swift */; };
+		BB5ADD292C3C60F90095A105 /* ScrollGeometryPhaseTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD282C3C60F90095A105 /* ScrollGeometryPhaseTab.swift */; };
+		BB5ADD2B2C3C69860095A105 /* ScrollVisibilityTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD2A2C3C69860095A105 /* ScrollVisibilityTab.swift */; };
+		BB5ADD2D2C3C83BC0095A105 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5ADD2C2C3C83BC0095A105 /* CarouselView.swift */; };
+		BB5ADD2F2C3C95880095A105 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5ADD2E2C3C95880095A105 /* Launch Screen.storyboard */; };
+		BB5ADD312C3C975B0095A105 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5ADD302C3C975B0095A105 /* README.md */; };
+		BBC9A2312C3B366A002F712A /* ScrollViewiOS18App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A2302C3B366A002F712A /* ScrollViewiOS18App.swift */; };
+		BBC9A2332C3B366A002F712A /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A2322C3B366A002F712A /* StartTabView.swift */; };
+		BBC9A2352C3B366B002F712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC9A2342C3B366B002F712A /* Assets.xcassets */; };
+		BBC9A2382C3B366B002F712A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC9A2372C3B366B002F712A /* Preview Assets.xcassets */; };
+		BBC9A23F2C3B36F8002F712A /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A23E2C3B36F2002F712A /* AppData.swift */; };
+		BBC9A2412C3B3915002F712A /* ScrollPositionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC9A2402C3B3915002F712A /* ScrollPositionTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB5ADD262C3C3DF10095A105 /* ScrollGeometryChangeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollGeometryChangeTab.swift; sourceTree = "<group>"; };
+		BB5ADD282C3C60F90095A105 /* ScrollGeometryPhaseTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollGeometryPhaseTab.swift; sourceTree = "<group>"; };
+		BB5ADD2A2C3C69860095A105 /* ScrollVisibilityTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVisibilityTab.swift; sourceTree = "<group>"; };
+		BB5ADD2C2C3C83BC0095A105 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		BB5ADD2E2C3C95880095A105 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BB5ADD302C3C975B0095A105 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BBC9A22D2C3B366A002F712A /* ScrollViewiOS18.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewiOS18.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC9A2302C3B366A002F712A /* ScrollViewiOS18App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewiOS18App.swift; sourceTree = "<group>"; };
+		BBC9A2322C3B366A002F712A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
+		BBC9A2342C3B366B002F712A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBC9A2372C3B366B002F712A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BBC9A23E2C3B36F2002F712A /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		BBC9A2402C3B3915002F712A /* ScrollPositionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPositionTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC9A22A2C3B366A002F712A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBC9A2242C3B366A002F712A = {
+			isa = PBXGroup;
+			children = (
+				BB5ADD302C3C975B0095A105 /* README.md */,
+				BBC9A22F2C3B366A002F712A /* ScrollViewiOS18 */,
+				BBC9A22E2C3B366A002F712A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC9A22E2C3B366A002F712A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC9A22D2C3B366A002F712A /* ScrollViewiOS18.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC9A22F2C3B366A002F712A /* ScrollViewiOS18 */ = {
+			isa = PBXGroup;
+			children = (
+				BBC9A2302C3B366A002F712A /* ScrollViewiOS18App.swift */,
+				BBC9A2322C3B366A002F712A /* StartTabView.swift */,
+				BBC9A2402C3B3915002F712A /* ScrollPositionTabView.swift */,
+				BB5ADD262C3C3DF10095A105 /* ScrollGeometryChangeTab.swift */,
+				BB5ADD282C3C60F90095A105 /* ScrollGeometryPhaseTab.swift */,
+				BB5ADD2A2C3C69860095A105 /* ScrollVisibilityTab.swift */,
+				BB5ADD2C2C3C83BC0095A105 /* CarouselView.swift */,
+				BBC9A23E2C3B36F2002F712A /* AppData.swift */,
+				BB5ADD2E2C3C95880095A105 /* Launch Screen.storyboard */,
+				BBC9A2342C3B366B002F712A /* Assets.xcassets */,
+				BBC9A2362C3B366B002F712A /* Preview Content */,
+			);
+			path = ScrollViewiOS18;
+			sourceTree = "<group>";
+		};
+		BBC9A2362C3B366B002F712A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BBC9A2372C3B366B002F712A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC9A22C2C3B366A002F712A /* ScrollViewiOS18 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC9A23B2C3B366B002F712A /* Build configuration list for PBXNativeTarget "ScrollViewiOS18" */;
+			buildPhases = (
+				BBC9A2292C3B366A002F712A /* Sources */,
+				BBC9A22A2C3B366A002F712A /* Frameworks */,
+				BBC9A22B2C3B366A002F712A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollViewiOS18;
+			productName = ScrollViewiOS18;
+			productReference = BBC9A22D2C3B366A002F712A /* ScrollViewiOS18.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC9A2252C3B366A002F712A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					BBC9A22C2C3B366A002F712A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BBC9A2282C3B366A002F712A /* Build configuration list for PBXProject "ScrollViewiOS18" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC9A2242C3B366A002F712A;
+			productRefGroup = BBC9A22E2C3B366A002F712A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC9A22C2C3B366A002F712A /* ScrollViewiOS18 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC9A22B2C3B366A002F712A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5ADD2F2C3C95880095A105 /* Launch Screen.storyboard in Resources */,
+				BBC9A2382C3B366B002F712A /* Preview Assets.xcassets in Resources */,
+				BB5ADD312C3C975B0095A105 /* README.md in Resources */,
+				BBC9A2352C3B366B002F712A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC9A2292C3B366A002F712A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5ADD292C3C60F90095A105 /* ScrollGeometryPhaseTab.swift in Sources */,
+				BBC9A2412C3B3915002F712A /* ScrollPositionTabView.swift in Sources */,
+				BBC9A2332C3B366A002F712A /* StartTabView.swift in Sources */,
+				BBC9A2312C3B366A002F712A /* ScrollViewiOS18App.swift in Sources */,
+				BBC9A23F2C3B36F8002F712A /* AppData.swift in Sources */,
+				BB5ADD272C3C3DF10095A105 /* ScrollGeometryChangeTab.swift in Sources */,
+				BB5ADD2D2C3C83BC0095A105 /* CarouselView.swift in Sources */,
+				BB5ADD2B2C3C69860095A105 /* ScrollVisibilityTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBC9A2392C3B366B002F712A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBC9A23A2C3B366B002F712A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC9A23C2C3B366B002F712A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollViewiOS18/Preview Content\"";
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.ScrollViewiOS18;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC9A23D2C3B366B002F712A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollViewiOS18/Preview Content\"";
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.ScrollViewiOS18;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC9A2282C3B366A002F712A /* Build configuration list for PBXProject "ScrollViewiOS18" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC9A2392C3B366B002F712A /* Debug */,
+				BBC9A23A2C3B366B002F712A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC9A23B2C3B366B002F712A /* Build configuration list for PBXNativeTarget "ScrollViewiOS18" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC9A23C2C3B366B002F712A /* Debug */,
+				BBC9A23D2C3B366B002F712A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC9A2252C3B366A002F712A /* Project object */;
+}
