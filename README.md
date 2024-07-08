@@ -1,6 +1,6 @@
 # ScrollView in iOS 18
 
-![mac128](Images/mac128.png)This is the starter project for the video on changes to ScrollView in iOS 18
+![mac128](Images/mac128.png)This is the completed source code for the project for the video on changes to ScrollView in iOS 18
 
 
 
