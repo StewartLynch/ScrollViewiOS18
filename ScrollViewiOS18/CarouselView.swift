@@ -16,25 +16,51 @@
 import SwiftUI
 
 struct CarouselView: View {
+    @State private var imagesOnScreen: [CarouselImage] = []
+    @State private var scrollPosition = ScrollPosition()
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing:0) {
-                ForEach(AppData.myImages) { carouselImage in
-                    VStack {
-                        Image(carouselImage.imageName)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: .infinity)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                            .shadow(radius: 10)
-                            .padding()
-                        Text(carouselImage.imageTitle)
+        VStack{
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing:0) {
+                    ForEach(AppData.myImages) { carouselImage in
+                        VStack {
+                            Image(carouselImage.imageName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: .infinity)
+                                .clipShape(RoundedRectangle(cornerRadius: 20))
+                                .shadow(radius: 10)
+                                .padding()
+                            Text(carouselImage.imageTitle)
+                        }
+                        .id(carouselImage)
                     }
+                    .containerRelativeFrame(.horizontal)
                 }
-                .containerRelativeFrame(.horizontal)
+                .scrollTargetLayout()
             }
+            HStack {
+                ForEach(AppData.myImages) { image in
+                Circle()
+                        .fill(imagesOnScreen.contains(image) ? .secondary : .primary)
+                        .frame(width: imagesOnScreen.contains(image) ? 20 : 10)
+                        .onTapGesture {
+                            withAnimation {
+                                scrollPosition.scrollTo(id: image)
+                            }
+                        }
+                }
+            }
+            .padding(5)
+            .background(.thickMaterial, in: Capsule())
+            .animation(.default, value: imagesOnScreen)
         }
+        .scrollPosition($scrollPosition)
         .scrollTargetBehavior(.paging)
+        .onScrollTargetVisibilityChange(idType: CarouselImage.self) { carouselImages in
+            imagesOnScreen = carouselImages
+            print(imagesOnScreen)
+        }
     }
 }
 

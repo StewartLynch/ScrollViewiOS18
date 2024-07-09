@@ -16,6 +16,8 @@
 import SwiftUI
 
 struct ScrollVisibilityTab: View {
+    @State private var lastVisibleColor: Color?
+    @State private var visibleColors: [Color] = []
     var body: some View {
         NavigationStack{
             ScrollView {
@@ -28,10 +30,24 @@ struct ScrollVisibilityTab: View {
                                 Text(String(describing: color))
                                     .font(.largeTitle)
                                     .foregroundStyle(.white)
+                                    .scaleEffect(lastVisibleColor == color ? 3.5 : 1.0)
+                            }
+                            .rotationEffect(visibleColors.contains(color) ? Angle.zero : Angle(degrees: 30))
+                            .opacity(visibleColors.contains(color) ? 1 : 0.3)
+                            .animation(.default, value: lastVisibleColor)
+                            .animation(.default, value: visibleColors)
+                            .onScrollVisibilityChange { isVisible in
+                                if isVisible {
+                                    lastVisibleColor = color
+                                }
                             }
                     }
                 }
+                .scrollTargetLayout()
             }
+            .onScrollTargetVisibilityChange(idType: Color.self, threshold: 0.3, { colors in
+                visibleColors = colors
+            })
             .padding()
             .navigationTitle("Scroll Visibility")
         }

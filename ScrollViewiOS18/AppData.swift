@@ -14,7 +14,7 @@
 
 import SwiftUI
 
-struct CarouselImage: Identifiable {
+struct CarouselImage: Identifiable, Hashable {
     let id: Int
     let imageName: String
     let imageTitle: String

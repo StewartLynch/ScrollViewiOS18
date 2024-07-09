@@ -16,6 +16,7 @@ import SwiftUI
 
 struct ScrollPositionTabView: View {
     @State private var colorIndex = 0
+    @State private var scrollPosition = ScrollPosition()
     var body: some View {
         NavigationStack{
             ScrollView {
@@ -32,16 +33,25 @@ struct ScrollPositionTabView: View {
                     }
                 }
             }
+            .scrollPosition($scrollPosition)
+            .defaultScrollAnchor(.bottom)
+            .animation(.default, value: scrollPosition)
             .padding()
             .navigationTitle("ScrollPosition")
             .toolbar {
                 HStack {
                     Button("Top Scroll Position", systemImage: "arrowshape.up.fill") {
-                        
+                        scrollPosition.scrollTo(edge: .top)
                     }
                     Button("Random Scroll Position", systemImage: "questionmark.square.fill") {
+//                        scrollPosition.scrollTo(id: AppData.myColors[3])
+                        if let randomColor = AppData.myColors.randomElement() {
+                            scrollPosition.scrollTo(id: randomColor)
+                            print(String(describing: randomColor))
+                        }
                     }
                     Button("Bottom Scroll Position", systemImage: "arrowshape.down.fill") {
+                        scrollPosition.scrollTo(edge: .bottom)
                     }
                     Picker(selection: $colorIndex) {
                         ForEach(0..<AppData.myColors.count, id: \.self) { index in
@@ -49,6 +59,9 @@ struct ScrollPositionTabView: View {
                         }
                     } label: {
                         Text("")
+                    }
+                    .onChange(of: colorIndex) {
+                        scrollPosition.scrollTo(y: CGFloat(310 * colorIndex))
                     }
                 }
             }

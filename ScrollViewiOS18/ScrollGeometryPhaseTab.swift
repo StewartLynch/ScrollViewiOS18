@@ -16,6 +16,7 @@
 import SwiftUI
 
 struct ScrollGeometryPhaseTab: View {
+    @State private var scrollPhase = ScrollPhase.idle
     var body: some View {
         NavigationStack{
             ScrollView {
@@ -29,7 +30,17 @@ struct ScrollGeometryPhaseTab: View {
                                     .font(.largeTitle)
                                     .foregroundStyle(.white)
                             }
+//                            .opacity(scrollPhase == .idle ? 1.0 : 0.5)
+                            .opacity(!scrollPhase.isScrolling ? 1.0 : 0.5)
                     }
+                }
+            }
+            .animation(.default, value: scrollPhase)
+            .onScrollPhaseChange { oldPhase, newPhase, context in
+                scrollPhase = newPhase
+//                print(context.geometry)
+                if let dy = context.velocity?.dy {
+                    print(dy)
                 }
             }
             .padding()
