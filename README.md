@@ -1,8 +1,9 @@
 # ScrollView in iOS 18
 
 ![mac128](Images/mac128.png)This is the starter project for the video on changes to ScrollView in iOS 18
-
-Release Date: August 11, 2024
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=inOtbh9GPPY
+" target="_blank"><img src="http://img.youtube.com/vi/inOtbh9GPPY/0.jpg" 
+alt="iOS18 ScrollView Deep dive" width="480" height="360" border="1" /></a>
 
 </a>
 
